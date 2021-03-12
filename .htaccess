@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    #https redirect 
+    RewriteCond %{HTTP_HOST} ^codegit\.xyz [NC]
+    RewriteCond %{HTTPS} on
+    RewriteRule ^(.*)$ https://cvsuu.codegit.xyz/$1 [R,L]
+</IfModule>
