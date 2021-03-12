@@ -1,1 +1,0 @@
-# Barangay-Response-Web-App
