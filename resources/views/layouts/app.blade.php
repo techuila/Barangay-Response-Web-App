@@ -92,45 +92,7 @@
     <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.6.min.js"></script>
     <!-- Mapbox JS -->
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
-        <script>
-            $('form').on('submit', (e)=>{
-                console.log($('form').serialize());
-                // e.preventDefault();
-
-                // $.ajax({
-                //     url: '/login',
-                //     dataType: 'JSON',
-                //     type: 'POST',
-                //     data:{email: $('#email').val(), password: $("#password").val()},
-                //     success: (data)=>{
-                //         console.log(data);
-                //     }
-                // });
-            });
-            $(document).ready(()=>{
-                // mapboxgl.accessToken = 'pk.eyJ1IjoiYXhsY3V5dWdhbiIsImEiOiJjam9sMGc1dmEwaGR4M3BsczE1d3N0OXljIn0.iMI0eN2E39aTuNxtCkpY3Q';
-                // var map = new mapboxgl.Map({
-                //     container: 'map', // container id
-                //     style: 'mapbox://styles/mapbox/streets-v9',
-                //     center: [-96, 37.8], // starting position
-                //     zoom: 3 // starting zoom
-                // });
-        
-                // if (!mapboxgl.supported()) {
-                //     alert('Your browser does not support Mapbox GL');
-                // } else {
-                //     console.log("SUPPORTED");
-                //     // Add geolocate control to the map.
-                //     map.addControl(new mapboxgl.GeolocateControl({
-                //         positionOptions: {
-                //             enableHighAccuracy: true
-                //         },
-                //         trackUserLocation: true
-                //     }));
-                // }
-            });
-        </script>
-
+      
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
