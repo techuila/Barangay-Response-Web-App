@@ -45,7 +45,6 @@ To run the Barangay Response Web App in development mode using Docker, follow th
 
 To stop the application, press `Ctrl+C` in the terminal where Docker is running
 
-```
 ### System Architecture
 
 The Barangay Response Web App is part of a larger system that includes:
