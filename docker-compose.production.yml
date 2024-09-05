@@ -24,6 +24,8 @@ services:
     volumes:
       - app_data:/var/www
       - ./docker-compose/nginx/prod:/etc/nginx/conf.d/
+    env_file:
+      - .env
     networks:
       - barangay_network_prod
 
