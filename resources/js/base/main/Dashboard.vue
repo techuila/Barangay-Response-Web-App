@@ -256,8 +256,8 @@
 		},
 		mounted() {
 			/* ============================
-				                    PUBNUB
-				         ==============================*/
+												                    PUBNUB
+												         ==============================*/
 			pubnub = new PubNub({
 				subscribeKey: "sub-c-8a113ba6-f2f0-11e8-b085-b2b44c5b7fba",
 				publishKey: "pub-c-61ae752a-7971-4d89-9859-7d17f4deb0b9",
@@ -292,11 +292,11 @@
 			});
 
 			/* ============================
-				                    MAPBOX
-				         ==============================*/
+												                    MAPBOX
+												         ==============================*/
 			$(document).ready(() => {
 				/* MAPBOX ACCES TOKEN */
-				mapboxgl.accessToken = process.env.MAPBOX_TOKEN;
+				mapboxgl.accessToken = process.env.MIX_MAPBOX_TOKEN;
 
 				/* CREATE INSTANCE OF MAPBOX */
 				map = new mapboxgl.Map({

@@ -23,7 +23,7 @@ services:
       - "8000:80"
     volumes:
       - app_data:/var/www
-      - ./docker-compose/nginx:/etc/nginx/conf.d/
+      - ./docker-compose/nginx/prod:/etc/nginx/conf.d/
     networks:
       - barangay_network_prod
 

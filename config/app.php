@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://cvsuu.codegit.xyz'),
+    'url' => env('APP_URL', 'http://barangay-response.axlc.dev'),
 
     'asset_url' => env('ASSET_URL', null),
 

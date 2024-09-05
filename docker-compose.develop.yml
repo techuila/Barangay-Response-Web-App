@@ -12,8 +12,11 @@ services:
     working_dir: /var/www/
     volumes:
       - ./:/var/www
+    env_file:
+      - .env
     networks:
       - cvsuu-network
+
   nginx:
     image: nginx:alpine
     container_name: cvsuu-nginx
@@ -22,7 +25,9 @@ services:
       - 8000:80
     volumes:
       - ./:/var/www
-      - ./docker-compose/nginx:/etc/nginx/conf.d/
+      - ./docker-compose/nginx/dev:/etc/nginx/conf.d/
+    env_file:
+      - .env
     networks:
       - cvsuu-network
 networks:

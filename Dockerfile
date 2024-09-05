@@ -1,5 +1,18 @@
 FROM php:7.4-fpm
 
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    unzip \
+    python2 \
+    npm \
+    nodejs
+
 ARG user
 ARG uid
 
@@ -21,3 +34,5 @@ RUN mkdir -p /home/$user/.composer && \
 WORKDIR /var/www
 
 USER $user
+
+CMD sh -c "composer install && npm install &&  npm run watch & php-fpm"
